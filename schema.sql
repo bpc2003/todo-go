@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS User (
+  id INTEGER PRIMARY KEY,
+  email text NOT NULL,
+  password text NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS List (
+  id INTEGER PRIMARY KEY,
+  todo text NOT NULL,
+  userid INTEGER NOT NULL
+);

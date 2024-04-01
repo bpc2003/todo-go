@@ -1,0 +1,42 @@
+body {
+  background-image: url("rice-paper-2.png");
+}
+
+.container {
+  text-align: center;
+}
+
+.sub-container {
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  margin-top: 0;
+  padding-left: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 1em;
+}
+
+li:hover {
+  text-decoration: line-through;
+}
+
+form, .placeholder {
+  padding-left: 2em;
+}
+
+input {
+  height: 2.1em;
+  width: 10em;
+}
+
+.button-small {
+  font-size: 85%;
+}

@@ -1,0 +1,26 @@
+{{ define "index" }}
+  {{ template "head" }}
+    <div class="container">
+    <div class="sub-container">
+      <h1>Todo List</h1>
+      {{ if .List }}
+        <ul>
+          {{ range .List }}
+            <li id={{ .ID }}>{{ .Todo }}</li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <p class="placeholder">Nothing to do here...</p>
+      {{ end }}
+      <form class="pure-form" action="" method="post">
+        <fieldset>
+          <input type="text" name="todo" class="pure-input">
+          <button type="submit" class="pure-button button-small pure-button-primary">
+            +
+          </button>
+        </fieldset>
+      </form>
+    </div>
+    </div>
+  {{ template "foot" }}
+{{ end }}
